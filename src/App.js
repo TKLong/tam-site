@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className='parent'>
+        <div className='parent main-grid'>
           <Nav />
           <div className='changing-content'>
             <Route exact path='/' component={Home}/>

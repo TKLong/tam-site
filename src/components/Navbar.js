@@ -10,8 +10,8 @@ class Nav extends Component {
           <h1>Tamara Long</h1>
         </div>
         <div className='navbar-links'>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
+          <Link to='/'>Work</Link>
+          <Link to='/about'>About Me</Link>
         </div>
       </div>
     );
