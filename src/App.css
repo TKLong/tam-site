@@ -1,5 +1,4 @@
 .navbar-parent {
-  background-color: grey;
   grid-area: nav;
   display: grid;
   grid-template-columns: 100px auto auto 100px;
@@ -9,6 +8,7 @@
   flex: 1;
   align-items: center;
   grid-area: name;
+  display: flex;
 }
 .navbar-links {
   display: flex;
@@ -17,8 +17,11 @@
   align-items: center;
   grid-area: links;
 }
+.navbar-links a {
+  padding: 0 25px;
+  font-size: 25px;
+}
 .footer-parent  {
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,10 +29,12 @@
   /* position: fixed;
   bottom: 0; */
   grid-area: footer;
+  color: white;
+  background-color: black;
 }
 .main-grid {
   display: grid;
-  grid-template-rows: 100px auto 150px;
+  grid-template-rows: 130px auto 150px;
   grid-template-columns: 100px auto 100px;
   grid-template-areas:
   "nav nav nav"
@@ -38,7 +43,6 @@
 }
 .changing-content {
   grid-area: page;
-  background-color: grey;
 }
 
 
@@ -48,40 +52,49 @@
   height: 100%; */
   display: grid;
   /* grid-template-columns: 100px auto auto auto 100px; */
-  grid-template-rows: 250px 50px 700px;
+  grid-template-rows: 500px 50px 700px;
   grid-template-areas: "header" "select" "portfolio";
 }
 .title {
   grid-area: header;
-  background-color: blue;
   display: grid;
   grid-template-columns: 100px auto 100px;
   grid-template-areas: ". text .";
+}
+.hook {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.title h1 {
-  grid-area: text;
-  background-color: white;
+.hook h1 {
+  font-size: 126px;
+  border-bottom: thin solid grey;
+  margin-bottom: 0;
+}
+.hook h3 {
+  font-size: 40px;
+  margin-top: 0;
 }
 .selector {
   display: grid;
   grid-area: select;
-  background-color: brown;
   grid-template-columns: 100px auto 100px;
   grid-template-areas: ". selectBar .";
 }
 .select-bar {
   grid-area: selectBar;
-  background-color: green;
+  display: flex;
+  justify-content: space-evenly;
 }
 .portfolio {
   grid-area: portfolio;
-  background-color: red;
   display: grid;
   grid-template-columns: 100px auto 100px;
   grid-template-rows: 50px auto 50px;
-  grid-template-areas: ". . ." ". items ." ". . ."
+  grid-template-areas: ". . ." ". items ." ". . .";
+  background-color: lightgrey;
 }
 .portfolio-items-container {
   grid-area: items;
@@ -107,39 +120,87 @@
   grid-template-areas: "description" "interests" "contact";
 }
 .self-description {
+  background-color: lightgrey;
   grid-area: description;
-  background-color: blue;
   display: grid;
   grid-template-columns: 100px auto 100px;
   grid-template-areas: ". text .";
 }
-.self-description .text {
+.self-description .description-content {
   grid-area: text;
-  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+.placeholder-image {
+  flex: 1;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: thin solid black;
+  padding: 20px;
+}
+.text {
+  flex: 3;
+  padding: 20px;
+  font-size: 18px;
 }
 .interests {
   display: grid;
   grid-area: interests;
-  background-color: brown;
   grid-template-columns: 100px auto auto auto 100px;
   grid-template-areas: ". creating reading listening .";
 }
+.interests h3 {
+  font-size: 20px;
+  border-bottom: thin solid black;
+  text-transform: uppercase;
+}
 .creating {
   grid-area: creating;
+  padding: 20px;
 }
 .reading {
   grid-area: reading;
+  padding: 20px;
 }
 .listening {
   grid-area: listening;
+  padding: 20px;
 }
 .contact {
+  background-color: lightgrey;
   grid-area: contact;
-  background-color: red;
   display: grid;
   grid-template-columns: 100px auto 100px;
   grid-template-areas: ". email ."
 }
-.contact h1 {
+.contact-content {
   grid-area: email;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content h3 {
+  font-size: 23px;
+}
+.contact-content h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+button {
+  border-radius: 10px;
+  width: 75px;
+  border: thin solid black;
+}
+button:hover {
+  background-color: blue;
+}
+
+.item-all {
+  display: none;
 }
