@@ -1,0 +1,73 @@
+@import './variables.scss';
+.home-grid {
+  grid-area: page;
+  display: grid;
+  grid-template-rows: 500px 50px 700px;
+  grid-template-areas: "header" "select" "portfolio";
+}
+.title {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas: ". text .";
+}
+.hook {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hook h1 {
+  font-size: 126px;
+  border-bottom: thin solid grey;
+  margin-bottom: 0;
+}
+.hook h3 {
+  font-size: 40px;
+  margin-top: 0;
+}
+.selector {
+  display: grid;
+  grid-area: select;
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas: ". selectBar .";
+}
+.select-bar {
+  grid-area: selectBar;
+  display: flex;
+  justify-content: space-evenly;
+}
+.portfolio {
+  grid-area: portfolio;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas: ". . ." ". items ." ". . .";
+  background-color: lightgrey;
+}
+.portfolio-items-container {
+  grid-area: items;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 200px;
+  grid-gap: 10px 10px;
+}
+.portfolio-item {
+  border: thin solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border-radius: 10px;
+  width: 75px;
+  border: thin solid black;
+}
+button:hover {
+  background-color: blue;
+}
+
+.item-all {
+  display: none;
+}

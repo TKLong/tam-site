@@ -1,0 +1,12 @@
+.main-grid {
+  display: grid;
+  grid-template-rows: 130px auto 150px;
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas:
+  "nav nav nav"
+  "page page page"
+  "footer footer footer"
+}
+.changing-content {
+  grid-area: page;
+}

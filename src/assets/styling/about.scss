@@ -1,0 +1,78 @@
+.about-grid {
+  grid-area: page;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 400px 250px;
+  grid-template-areas: "description interests"
+                        "contact interests";
+}
+.self-description {
+  background-color: lightgrey;
+  grid-area: description;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas: ". text .";
+}
+.self-description .description-content {
+  grid-area: text;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+.placeholder-image {
+  flex: 1;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: thin solid black;
+  padding: 20px;
+}
+.text {
+  flex: 3;
+  padding: 20px;
+  font-size: 18px;
+}
+.interests {
+  display: flex;
+  flex-direction: column;
+}
+.interests h3 {
+  font-size: 20px;
+  border-bottom: thin solid black;
+  text-transform: uppercase;
+}
+.creating {
+  grid-area: creating;
+  padding: 20px;
+}
+.reading {
+  grid-area: reading;
+  padding: 20px;
+}
+.listening {
+  grid-area: listening;
+  padding: 20px;
+}
+.contact {
+  background-color: lightgrey;
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas: ". email ."
+}
+.contact-content {
+  grid-area: email;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content h3 {
+  font-size: 23px;
+}
+.contact-content h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
