@@ -1,20 +1,31 @@
+@import './variables.scss';
+$descriptionBackgroundColor: lightgrey;
+$contactBackgroundColor: lightgrey;
+
 .about-grid {
   grid-area: page;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 400px 250px;
-  grid-template-areas: "description interests"
-                        "contact interests";
+  // display: grid;
+  // grid-template-columns: 70% 30%;
+  // grid-template-rows: 400px 250px;
+  // grid-template-areas: "description interests"
+  //                       "contact interests";
+  display: flex;
+}
+.personal-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
 }
 .self-description {
-  background-color: lightgrey;
-  grid-area: description;
-  display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-areas: ". text .";
+  background-color: darkgrey;
+  // grid-area: description;
+  // display: grid;
+  // grid-template-columns: 100px auto 100px;
+  // grid-template-areas: ". text .";
+  flex: 2;
 }
 .self-description .description-content {
-  grid-area: text;
+  // grid-area: text;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,35 +46,52 @@
   font-size: 18px;
 }
 .interests {
+  height: 100%;
+  // grid-area: interests;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.interest-wrapper {
+  background-color: lightgrey;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 .interests h3 {
   font-size: 20px;
   border-bottom: thin solid black;
   text-transform: uppercase;
 }
-.creating {
-  grid-area: creating;
+.interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
-.reading {
-  grid-area: reading;
-  padding: 20px;
+
+.placeholder-img {
+  height: 100px;
+  width: 100px;
 }
-.listening {
-  grid-area: listening;
-  padding: 20px;
-}
+
 .contact {
-  background-color: lightgrey;
-  grid-area: contact;
-  display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-areas: ". email ."
+  flex: 1;
+  background-color: $contactBackgroundColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // grid-area: contact;
+  // display: grid;
+  // grid-template-columns: 100px auto 100px;
+  // grid-template-areas: ". email ."
 }
 .contact-content {
-  grid-area: email;
+  // grid-area: email;
   display: flex;
   flex-direction: column;
   justify-content: center;

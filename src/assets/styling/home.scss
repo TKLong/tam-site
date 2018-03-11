@@ -1,18 +1,19 @@
 @import './variables.scss';
+
 .home-grid {
-  grid-area: page;
-  display: grid;
-  grid-template-rows: 500px 50px 700px;
-  grid-template-areas: "header" "select" "portfolio";
+  // grid-area: page;
+  // display: grid;
+  // grid-template-rows: 500px 50px 700px;
+  // grid-template-areas: "header" "select" "portfolio";
 }
 .title {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-areas: ". text .";
+  // grid-area: header;
+  // display: grid;
+  // grid-template-columns: 100px auto 100px;
+  // grid-template-areas: ". text .";
 }
 .hook {
-  grid-area: text;
+  // grid-area: text;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,10 +29,10 @@
   margin-top: 0;
 }
 .selector {
-  display: grid;
-  grid-area: select;
-  grid-template-columns: 100px auto 100px;
-  grid-template-areas: ". selectBar .";
+  // display: grid;
+  // grid-area: select;
+  // grid-template-columns: 100px auto 100px;
+  // grid-template-areas: ". selectBar .";
 }
 .select-bar {
   grid-area: selectBar;
@@ -39,19 +40,19 @@
   justify-content: space-evenly;
 }
 .portfolio {
-  grid-area: portfolio;
-  display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-rows: 50px auto 50px;
-  grid-template-areas: ". . ." ". items ." ". . .";
-  background-color: lightgrey;
+  // grid-area: portfolio;
+  // display: grid;
+  // grid-template-columns: 100px auto 100px;
+  // grid-template-rows: 50px auto 50px;
+  // grid-template-areas: ". . ." ". items ." ". . .";
+  // background-color: lightgrey;
 }
 .portfolio-items-container {
-  grid-area: items;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 200px;
-  grid-gap: 10px 10px;
+  // grid-area: items;
+  // display: grid;
+  // grid-template-columns: auto auto auto;
+  // grid-template-rows: 200px;
+  // grid-gap: 10px 10px;
 }
 .portfolio-item {
   border: thin solid black;

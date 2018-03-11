@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import '../App.css';
+import '../assets/styling/App.css';
 
 class Nav extends Component {
   render() {
@@ -10,7 +10,8 @@ class Nav extends Component {
           <h1>Tamara Long</h1>
         </div>
         <div className='navbar-links'>
-          <Link to='/'>Work</Link>
+          <Link to='/home'>Home</Link>
+          <Link to='/work'>Work</Link>
           <Link to='/about'>About Me</Link>
         </div>
       </div>
