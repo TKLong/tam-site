@@ -3,8 +3,8 @@
 .navbar-parent {
   grid-area: nav;
   display: grid;
-  grid-template-columns: 100px auto auto 100px;
-  grid-template-areas: ". name links ."
+  grid-template-columns: 50px auto auto 50px;
+  grid-template-areas: ". name links .";
 }
 .navbar-title {
   flex: 1;
@@ -15,7 +15,7 @@
 .navbar-links {
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   grid-area: links;
 }
