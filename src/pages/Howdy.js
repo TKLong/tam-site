@@ -8,17 +8,44 @@ class Howdy extends Component {
     return (
       <div className="ux-page">
         <div className="title-wrapper">
-          <h1>Title</h1>
           <img src={placeholder} height='400px' width='400px' />
+          <h2>Project Title</h2>
         </div>
         <div className="section">
-          <h3>Heading</h3>
-          <div className="text">
-            <p>Text</p>
+          <h3>Section title</h3>
+          <div className="section-content">
+            <div className="text">
+              <p>Text</p>
+            </div>
+            <div className="image">
+              <img src={placeholder} height='300px' width='300px' />
+            </div>
           </div>
-          <div className="image">
-            <img src={placeholder} height='300px' width='300px' />
+        </div>
+        <div className="section">
+          <h3>Section title</h3>
+          <div className="section-content">
+            <div className="image">
+              <img src={placeholder} height='300px' width='300px' />
+            </div>
+            <div className="text">
+              <p>Text</p>
+            </div>
           </div>
+        </div>
+        <div className="section">
+          <h3>Section title</h3>
+          <div className="section-content">
+            <div className="text">
+              <p>Text</p>
+            </div>
+            <div className="image">
+              <img src={placeholder} height='300px' width='300px' />
+            </div>
+          </div>
+        </div>
+        <div className="study-link">
+          Click here for the PDF
         </div>
         <div className="options">
           <Link to='/home'>

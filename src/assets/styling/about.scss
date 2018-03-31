@@ -4,11 +4,6 @@ $contactBackgroundColor: lightgrey;
 
 .about-grid {
   grid-area: page;
-  // display: grid;
-  // grid-template-columns: 70% 30%;
-  // grid-template-rows: 400px 250px;
-  // grid-template-areas: "description interests"
-  //                       "contact interests";
   display: flex;
 }
 .personal-wrapper {
@@ -18,14 +13,9 @@ $contactBackgroundColor: lightgrey;
 }
 .self-description {
   background-color: darkgrey;
-  // grid-area: description;
-  // display: grid;
-  // grid-template-columns: 100px auto 100px;
-  // grid-template-areas: ". text .";
   flex: 2;
 }
 .self-description .description-content {
-  // grid-area: text;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,7 +37,6 @@ $contactBackgroundColor: lightgrey;
 }
 .interests {
   height: 100%;
-  // grid-area: interests;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,13 +74,8 @@ $contactBackgroundColor: lightgrey;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // grid-area: contact;
-  // display: grid;
-  // grid-template-columns: 100px auto 100px;
-  // grid-template-areas: ". email ."
 }
 .contact-content {
-  // grid-area: email;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,4 +87,21 @@ $contactBackgroundColor: lightgrey;
 .contact-content h1 {
   font-size: 50px;
   margin-top: 0;
+}
+@media screen and (max-width: 1000px) {
+  .about-grid {
+    grid-area: page;
+    flex-direction: column;
+  }
+  .interest-wrapper {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .interest-item {
+    border: 1px solid black;
+  }
 }

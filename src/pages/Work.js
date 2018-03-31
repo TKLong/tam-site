@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../assets/styling/App.css';
 import placeholder from '../assets/images/placeholder.jpeg';
 
-class Home extends Component {
+class Work extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -26,6 +26,7 @@ class Home extends Component {
             <h1>I am a storyteller</h1>
             <h3>designing UX/UI for the web and mobile apps</h3>
           </div>
+          <div className="bar" />
         </div>
         <div className="portfolio">
           <div className="portfolio-item">
@@ -49,4 +50,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Work;
