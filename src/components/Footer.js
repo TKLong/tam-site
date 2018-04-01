@@ -15,9 +15,6 @@ class Footer extends Component {
           <a href="#"><img src={linkedin} height='42' width='42' /></a>
           <a href="#"><img src={instagram} height='42' width='42' /></a>
         </div>
-        <div className='footer-name'>
-          <h5>Tamara Long 2018</h5>
-        </div>
       </div>
     );
   }

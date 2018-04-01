@@ -57,22 +57,20 @@ class About extends Component {
           </div>
         </div>
         <div className="interests">
-          <div className="interest-wrapper">
-            <div className="interest-item">
-              <h3>Currently Creating...</h3>
-              <img className="placeholder-img" src={placeholder} />
-              <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
-            </div>
-            <div className="interest-item">
-              <h3>Currently Reading...</h3>
-              <img className="placeholder-img" src={placeholder} />
-              <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
-            </div>
-            <div className="interest-item">
-              <h3>Currently Listening...</h3>
-              <img className="placeholder-img" src={placeholder} />
-              <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
-            </div>
+          <div className="interest-item">
+            <h3>Currently Creating...</h3>
+            <img className="placeholder-img" src={placeholder} />
+            <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
+          </div>
+          <div className="interest-item">
+            <h3>Currently Reading...</h3>
+            <img className="placeholder-img" src={placeholder} />
+            <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
+          </div>
+          <div className="interest-item">
+            <h3>Currently Listening...</h3>
+            <img className="placeholder-img" src={placeholder} />
+            <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
           </div>
         </div>
       </div>

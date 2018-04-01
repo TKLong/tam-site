@@ -72,6 +72,8 @@
 @media screen and (max-width: 1000px) {
   .portfolio {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .portfolio-item {
     &:first-child {
@@ -79,12 +81,12 @@
         bottom: 1px solid black;
         left: none;
         right: none;
-        top: 1px solid black;
+        top: none;
       }
     }
     &:last-child {
       border: {
-        bottom: 1px solid black;
+        bottom: none;
         left: none;
         right: none;
         top: 1px solid black;

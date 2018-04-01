@@ -8,5 +8,7 @@
   grid-area: footer;
   color: white;
   background-color: darkgrey;
-  padding: 30px;
+  a {
+    padding: 0 10px;
+  }
 }
