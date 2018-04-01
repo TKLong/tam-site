@@ -12,7 +12,6 @@ $contactBackgroundColor: lightgrey;
   flex: 3;
 }
 .self-description {
-  background-color: darkgrey;
   flex: 2;
 }
 .self-description .description-content {
@@ -20,6 +19,9 @@ $contactBackgroundColor: lightgrey;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  img {
+    min-width: 300px;
+  }
 }
 .placeholder-image {
   height: 500px;
@@ -59,7 +61,9 @@ $contactBackgroundColor: lightgrey;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 50px 20px;
+  background-color: lightgrey;
+  margin: 10px;
 }
 
 .placeholder-img {
@@ -74,6 +78,7 @@ $contactBackgroundColor: lightgrey;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 300px;
 }
 .contact-content {
   display: flex;

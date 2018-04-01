@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../assets/styling/App.css';
 import placeholder from '../assets/images/placeholder.jpeg';
+import about from '../assets/images/about.jpg';
 
 class About extends Component {
   render() {
@@ -9,9 +10,9 @@ class About extends Component {
         <div className="personal-wrapper">
           <div className="self-description">
             <div className="description-content">
-              <div className="placeholder-image">IMAGE</div>
+              <img src={about} height='50%' width='50%' />
               <div className="text">
-                <p>Boston-based UX Designer</p>
+                <p style={{textAlign: 'center'}}>Boston-based UX Designer</p>
                 <p>The principles of UX design have been a driving factor in my
                 life for quite some time. I’ve always had a fascination with human
                 interactions and relationships as well as a knack for visual design.
