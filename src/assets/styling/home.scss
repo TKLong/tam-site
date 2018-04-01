@@ -12,7 +12,7 @@
   position: relative;
 }
 .hook {
-  background-color: lightblue;
+  // background-color: lightblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,11 @@
   height: 40px;
   position: absolute;
   bottom: 0;
-  background-color: black;
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 .hook h1 {
   font-size: 126px;
@@ -44,11 +48,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 500px;
+  max-height: 500px;
   &:first-child {
     border-right: 1px solid black;
   }
   &:last-child {
     border-left: 1px solid black;
+  }
+  img {
+    flex: 1;
+    height: 80%;
+    width: 100%;
+  }
+  .text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 1000px) {

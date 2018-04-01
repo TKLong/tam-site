@@ -2,85 +2,58 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import '../assets/styling/App.css';
 import placeholder from '../assets/images/placeholder.jpeg';
+import crowdfunding from '../assets/images/daily-ui-crowdfunding.jpg';
+import customize from '../assets/images/daily-ui-customize-product.jpg';
+import invoice from '../assets/images/daily-ui-invoice.jpg';
+import listing from '../assets/images/daily-ui-job-listing.jpg';
+import weather from '../assets/images/daily-ui-weather.jpg';
+import Nav from '../components/ProjectNav.js';
+
 
 class Ui extends Component {
   render() {
     return (
       <div className="ux-page">
         <div className="title-wrapper">
-          <img src={placeholder} height='400px' width='400px' />
+          <img src={weather} height='100%' width='100%' />
           <h2>Project Title</h2>
         </div>
         <h2 className="subheader">Cool story</h2>
         <div className="ui-content">
           <div className="ui-grid">
             <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' title="long test" />
+              <img src={weather} height='100%' width='300px' title="long test" />
               <div className="hidden-text">
-                This text should be hidden
+                Weather
               </div>
             </div>
             <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
+              <img src={crowdfunding} height='100%' width='100%' />
               <div className="hidden-text">
-                This text should be hidden
+                Crowdfunding
               </div>
             </div>
             <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
+              <img src={customize} height='100%' width='100%' />
               <div className="hidden-text">
-                This text should be hidden
+                Custom Product
               </div>
             </div>
             <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
+              <img src={invoice} height='100%' width='100%' />
               <div className="hidden-text">
-                This text should be hidden
+                Invoice
               </div>
             </div>
             <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
+              <img src={listing} height='100%' width='100%' />
               <div className="hidden-text">
-                This text should be hidden
-              </div>
-            </div>
-            <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
-              <div className="hidden-text">
-                This text should be hidden
-              </div>
-            </div>
-            <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
-              <div className="hidden-text">
-                This text should be hidden
-              </div>
-            </div>
-            <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
-              <div className="hidden-text">
-                This text should be hidden
-              </div>
-            </div>
-            <div className="ui-item">
-              <img src={placeholder} height='300px' width='300px' />
-              <div className="hidden-text">
-                This text should be hidden
+                Listing
               </div>
             </div>
           </div>
         </div>
-        <div className="options">
-          <Link to='/home'>
-            <button>Home</button>
-          </Link>
-          <Link to='/work'>
-            <button>More Projects</button>
-          </Link>
-          <Link to='/about'>
-            <button>About me</button>
-          </Link>
-        </div>
+        <Nav />
       </div>
     );
   }
