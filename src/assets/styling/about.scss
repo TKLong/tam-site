@@ -1,0 +1,108 @@
+@import './variables.scss';
+$descriptionBackgroundColor: lightgrey;
+$contactBackgroundColor: lightgrey;
+
+.about-grid {
+  grid-area: page;
+  display: flex;
+}
+.personal-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.self-description {
+  flex: 2;
+}
+.self-description .description-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  img {
+    min-width: 300px;
+  }
+}
+.placeholder-image {
+  height: 500px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: thin solid black;
+  padding: 20px;
+}
+.text {
+  padding: 20px;
+  font-size: 18px;
+}
+.interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+// .interest-wrapper {
+//   background-color: lightgrey;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//
+//   // width: 80%;
+// }
+.interests h3 {
+  font-size: 20px;
+  border-bottom: thin solid black;
+  text-transform: uppercase;
+}
+.interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: lightgrey;
+  margin: 10px;
+}
+
+.placeholder-img {
+  height: 100px;
+  width: 100px;
+}
+
+.contact {
+  flex: 1;
+  background-color: $contactBackgroundColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content h3 {
+  font-size: 23px;
+}
+.contact-content h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+@media screen and (max-width: 1000px) {
+  .about-grid {
+    grid-area: page;
+    flex-direction: column;
+  }
+  .interests {
+    flex-direction: row;
+    width: 100%;
+  }
+  .interest-item {
+    border: 1px solid black;
+  }
+}

@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.footer-parent  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  color: white;
+  background-color: darkgrey;
+  a {
+    padding: 0 10px;
+  }
+}

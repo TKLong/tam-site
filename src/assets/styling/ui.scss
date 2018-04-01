@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+.subheader {
+  text-align: center;
+}
+
+.ui-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ui-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  .ui-item {
+    position: relative;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    .hidden-text {
+      visibility: hidden;
+    }
+    &:hover {
+      .hidden-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        visibility: visible;
+        // height: 300px;
+        // width: 300px;
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        background: rgba(270, 270, 270, 0.72);
+      }
+    }
+  }
+}
