@@ -5,11 +5,15 @@
   margin: 20px 0;
   .link {
     font-size: 21px;
-    color: grey;
+    color: lightgrey;
     padding: 0 5px;
     text-decoration: none;
     &:hover {
       color: darkgreen;
     }
+  }
+  .currLink {
+    color: darkgreen;
+    font-size: 25px;
   }
 }

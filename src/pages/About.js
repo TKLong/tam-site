@@ -10,9 +10,9 @@ class About extends Component {
         <div className="personal-wrapper">
           <div className="self-description">
             <div className="description-content">
-              <img src={about} height='50%' width='50%' />
+              <img src={about} />
               <div className="text">
-                <p style={{textAlign: 'center'}}>Boston-based UX Designer</p>
+                <h3 style={{textAlign: 'center'}}>Boston-based UX Designer</h3>
                 <p>The principles of UX design have been a driving factor in my
                 life for quite some time. I’ve always had a fascination with human
                 interactions and relationships as well as a knack for visual design.
@@ -57,23 +57,7 @@ class About extends Component {
             </div>
           </div>
         </div>
-        <div className="interests">
-          <div className="interest-item">
-            <h3>Currently Creating...</h3>
-            <img className="placeholder-img" src={placeholder} />
-            <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
-          </div>
-          <div className="interest-item">
-            <h3>Currently Reading...</h3>
-            <img className="placeholder-img" src={placeholder} />
-            <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
-          </div>
-          <div className="interest-item">
-            <h3>Currently Listening...</h3>
-            <img className="placeholder-img" src={placeholder} />
-            <p>Placeholder Text Placeholder Text Placeholder Text Placeholder Text Placeholder Text</p>
-          </div>
-        </div>
+
       </div>
     );
   }

@@ -33,7 +33,9 @@ class Ui extends Component {
       <div className="ux-page">
         <div className="title-wrapper">
           <img src={weather} height='100%' width='100%' />
-          <h2>Project Title</h2>
+          <div className="title-text">
+            <h2>Project Title</h2>
+          </div>
         </div>
         <h2 className="subheader">Cool story</h2>
         <div className="ui-content">
@@ -41,37 +43,37 @@ class Ui extends Component {
             <div className="ui-item" onClick={() => this.toggle(weather)}>
               <img src={weather} height='100%' width='100%' />
               <div className="hidden-text">
-                Weather
+                <h3>Weather</h3>
               </div>
             </div>
             <div className="ui-item" onClick={() => this.toggle(crowdfunding)}>
               <img src={crowdfunding} height='100%' width='100%' />
               <div className="hidden-text">
-                Crowdfunding
+                <h3>Crowdfunding</h3>
               </div>
             </div>
             <div className="ui-item" onClick={() => this.toggle(customize)}>
               <img src={customize} height='100%' width='100%' />
               <div className="hidden-text">
-                Custom Product
+                <h3>Custom Product</h3>
               </div>
             </div>
             <div className="ui-item" onClick={() => this.toggle(invoice)}>
               <img src={invoice} height='100%' width='100%' />
               <div className="hidden-text">
-                Invoice
+                <h3>Invoice</h3>
               </div>
             </div>
             <div className="ui-item" onClick={() => this.toggle(listing)}>
               <img src={listing} height='100%' width='100%' />
               <div className="hidden-text">
-                Listing
+                <h3>Listing</h3>
               </div>
             </div>
           </div>
         </div>
-        <Nav />
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} centered={true}>
+        <Nav page='UI' />
+        <Modal size='lg' isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} centered={true}>
           <img src={this.state.image} height='100%' width='100%' />
         </Modal>
       </div>

@@ -5,10 +5,14 @@
 }
 .title-wrapper {
   text-align: center;
-  background-color: darkgrey;
+  background-color: lightgrey;
+}
+.title-text {
+  padding: 20px 0;
 }
 .section {
   text-align: center;
+  margin: 0 100px;
   .section-content {
     display: flex;
     justify-content: center;
@@ -16,6 +20,12 @@
     .text {
       flex: 1;
       text-align: center;
+      p {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 30px;
+      }
     }
     .image {
       flex: 1;
@@ -25,10 +35,17 @@
   }
 }
 .study-link {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .howdy-study {
+    background-color: rgb(242, 212, 155);
+    border-color: rgb(242, 212, 155);
+  }
 }
 .options {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
 }

@@ -36,19 +36,45 @@ class Work extends Component {
         </div>
         <div className="portfolio">
           <div className="portfolio-item">
-            <Link to='/howdy'><h2>Howdy</h2></Link>
-            <img src={howdyHome} />
-            <p>Description</p>
+            <div className="portfolio-title">
+              <Link to='/howdy'><h2>Howdy</h2></Link>
+            </div>
+            <div className="portfolio-img">
+              <Link to='/howdy'>
+                <img src={howdyHome} />
+              </Link>
+            </div>
+            <div className="portfolio-description">
+              <p>Description</p>
+            </div>
           </div>
           <div className="portfolio-item">
-            <Link to='/mhouse'><h2>Mistake House</h2></Link>
-            <img src={mistakeHome} />
-            <p>Description</p>
+            <div className="portfolio-title">
+              <Link to='/mhouse'><h2>Mistake House</h2></Link>
+            </div>
+            <div className="portfolio-img">
+              <Link to='/mhouse'>
+                <img src={mistakeHome} />
+              </Link>
+            </div>
+            <div className="portfolio-description">
+              <p>Description</p>
+            </div>
           </div>
           <div className="portfolio-item">
-            <Link to='/ui'><h2>UI</h2></Link>
-            <img src={dailyUi} />
-            <p>Description</p>
+            <div className="portfolio-title">
+              <Link to='/ui'><h2>UI</h2></Link>
+            </div>
+            <div className="portfolio-img">
+              <Link to='/ui'>
+                <img src={dailyUi} />
+              </Link>
+            </div>
+            <div className="portfolio-description">
+            <div className="portfolio-description">
+              <p>Description</p>
+            </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 import '../assets/styling/App.css';
 import placeholder from '../assets/images/placeholder.jpeg';
 import home from '../assets/images/mhouse-home-screen.jpg';
@@ -14,8 +15,10 @@ class Mhouse extends Component {
       <div className="ux-page">
         <div className="title-wrapper">
           <img src={home} width='100%' />
-          <h2>Mistake House Magazine</h2>
-          <h3>UX/UI website redesign for Mistake House, an online literary magazine.</h3>
+          <div className="title-text">
+            <h2>Mistake House Magazine</h2>
+            <h4>UX/UI website redesign for Mistake House, an online literary magazine.</h4>
+          </div>
         </div>
         <div className="section">
           <div className="section-content">
@@ -60,9 +63,9 @@ class Mhouse extends Component {
           </div>
         </div>
         <div className="study-link">
-          Click here for the PDF
+          <Button>View Case Study</Button>
         </div>
-        <Nav page='mhouse' />
+        <Nav page='Mistake House' />
       </div>
     );
   }

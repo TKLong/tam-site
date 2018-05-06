@@ -10,6 +10,19 @@ class ProjectNav extends Component {
     };
   }
 
+  componentDidMount() {
+    this.findCurrLink()
+  }
+
+  findCurrLink() {
+    const list = document.getElementsByClassName('link');
+    for (let i = 0; i < list.length; i++ ) {
+      if ( list[i].text === this.state.page ) {
+        list[i].classList.add('currLink');
+      }
+    }
+  }
+
   render() {
     return (
       <div className="options">

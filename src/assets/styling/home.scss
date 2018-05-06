@@ -7,7 +7,7 @@
   // grid-template-areas: "header" "select" "portfolio";
 }
 .title {
-  height: 500px;
+  height: 550px;
   display: flex;
   position: relative;
 }
@@ -18,10 +18,11 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+  margin-bottom: 60px;
 }
 .bar {
   width: 100%;
-  height: 40px;
+  height: 60px;
   position: absolute;
   bottom: 0;
   background-color: darkgrey;
@@ -50,24 +51,34 @@
   align-items: center;
   max-width: 500px;
   max-height: 500px;
-  &:first-child {
-    border-right: 1px solid black;
-  }
-  &:last-child {
-    border-left: 1px solid black;
-  }
-  img {
-    flex: 1;
-    height: 80%;
-    width: 100%;
-  }
-  .text {
+  .portfolio-img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    // max-width: 500px;
+    // max-height: 500px;
+    a, img {
+      flex: 1;
+      height: 100%;
+      width: 100%;
+    }
   }
+  .portfolio-title, .portfolio-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2, p {
+      margin: 8px;
+    }
+  }
+  // .text {
+  //   flex: 1;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  // }
 }
 @media screen and (max-width: 1000px) {
   .portfolio {

@@ -7,7 +7,9 @@ class Nav extends Component {
     return (
       <div className='navbar-parent'>
         <div className='navbar-title'>
-          <h1>Tamara Long</h1>
+          <Link to='/work'>
+            <h1>Tamara Long</h1>
+          </Link>
         </div>
         <div className='navbar-links'>
           <Link to='/work'>Work</Link>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 import '../assets/styling/App.css';
 import placeholder from '../assets/images/placeholder.jpeg';
 import home from '../assets/images/Howdy-home.jpg';
@@ -15,8 +16,10 @@ class Howdy extends Component {
       <div className="ux-page">
         <div className="title-wrapper">
           <img src={home} width='100%' />
-          <h2>Howdy</h2>
-          <h3>UX/UI design for Howdy, an app that keeps friends tighter than bark on a tree.</h3>
+          <div className="title-text">
+            <h2>Howdy</h2>
+            <h4>UX/UI design for Howdy, an app that keeps friends tighter than bark on a tree.</h4>
+          </div>
         </div>
         <div className="section">
           <div className="section-content">
@@ -86,9 +89,9 @@ class Howdy extends Component {
           </div>
         </div>
         <div className="study-link">
-          Click here for the PDF
+          <Button className="howdy-study">View Case Study</Button>
         </div>
-        <Nav />
+        <Nav page='Howdy'/>
       </div>
     );
   }

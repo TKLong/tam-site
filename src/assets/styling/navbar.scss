@@ -5,12 +5,19 @@
   display: grid;
   grid-template-columns: 50px auto auto 50px;
   grid-template-areas: ". name links .";
+  height: 125px;
 }
 .navbar-title {
   flex: 1;
   align-items: center;
   grid-area: name;
   display: flex;
+  a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 .navbar-links {
   display: flex;

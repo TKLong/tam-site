@@ -2,12 +2,16 @@
 
 .subheader {
   text-align: center;
+  margin: 10px 0;
 }
 
 .ui-content {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.title-text {
+  padding: 20px 0;
 }
 .ui-grid {
   display: flex;
