@@ -11,9 +11,8 @@ class Footer extends Component {
     return (
       <div className='footer-parent'>
         <div className='footer-links'>
-          <a href="#"><img src={github} height='42' width='42' /></a>
-          <a href="#"><img src={linkedin} height='42' width='42' /></a>
-          <a href="#"><img src={instagram} height='42' width='42' /></a>
+          <a href="https://www.linkedin.com/in/tklong27/"><img src={linkedin} height='42' width='42' /></a>
+          <a href="https://www.instagram.com/tklong27/"><img src={instagram} height='42' width='42' /></a>
         </div>
       </div>
     );

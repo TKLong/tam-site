@@ -10,7 +10,9 @@ class About extends Component {
         <div className="personal-wrapper">
           <div className="self-description">
             <div className="description-content">
-              <img src={about} />
+              <div className="img">
+                <img src={about} />
+              </div>
               <div className="text">
                 <h3 style={{textAlign: 'center'}}>Boston-based UX Designer</h3>
                 <p>The principles of UX design have been a driving factor in my
@@ -52,8 +54,13 @@ class About extends Component {
           </div>
           <div className="contact">
             <div className="contact-content">
-              <h3>Want to work together? Email me:</h3>
-              <h1>email@gmail.com</h1>
+              <div className='contact-text'>
+                <h3>Let&#39;s collaborate</h3>
+                <h1>tklong04.27@gmail.com</h1>
+              </div>
+              <div className="resume">
+                <h1>Resume</h1>
+              </div>
             </div>
           </div>
         </div>

@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import '../assets/styling/App.css';
 import placeholder from '../assets/images/placeholder.jpeg';
-import home from '../assets/images/Howdy-home.jpg';
-import interview from '../assets/images/mhouse-interview.jpg';
-import past from '../assets/images/mhouse-past.jpg';
-import poetry from '../assets/images/mhouse-poetry.jpg';
+import home from '../assets/images/Howdy-splash.jpg';
+import challenge from '../assets/images/Howdy-homescreen.jpg';
+import solution from '../assets/images/Howdy-friend-profile.jpg';
+import process from '../assets/images/Howdy-wireframes.jpg';
+import insights from '../assets/images/Howdy-affinity-mapping.jpg';
 import Nav from '../components/ProjectNav.js';
 
 
@@ -18,30 +19,30 @@ class Howdy extends Component {
           <img src={home} width='100%' />
           <div className="title-text">
             <h2>Howdy</h2>
-            <h4>UX/UI design for Howdy, an app that keeps friends tighter than bark on a tree.</h4>
+            <h4 className="body-text">UX/UI design for Howdy, an app that keeps friends tighter than bark on a tree.</h4>
           </div>
         </div>
         <div className="section">
           <div className="section-content">
             <div className="text">
               <h3>Challenge</h3>
-              <p>During a fast paced and busy life, users want to make sure
+              <p className="body-text">During a fast paced and busy life, users want to make sure
               they’re staying connected with old friends and fostering relationships
               with their acquaintances and colleagues.</p>
             </div>
             <div className="image">
-              <img src={interview} height='100%' width='100%' />
+              <img src={challenge} height='100%' width='30%' />
             </div>
           </div>
         </div>
         <div className="section">
           <div className="section-content">
             <div className="image">
-              <img src={past} height='100%' width='100%' />
+              <img src={solution} height='100%' width='30%' />
             </div>
             <div className="text">
               <h3>Solution</h3>
-              <p>A mobile app that monitors the frequency of communication between
+              <p className="body-text">A mobile app that monitors the frequency of communication between
               contacts to see if a relationship is cooling down, schedules plans
               and outings, and facilitates conversations.</p>
             </div>
@@ -51,7 +52,7 @@ class Howdy extends Component {
           <div className="section-content">
             <div className="text">
               <h3>Process</h3>
-              <p>Starting with five in-depth interviews, as well as 20+ surveys,
+              <p className="body-text">Starting with five in-depth interviews, as well as 20+ surveys,
               during the research phase I was able to identify the who the primary
               users of Howdy would be. In tandem with conducting competitive analysis
               I was able to discover which features would be of highest priority
@@ -65,18 +66,18 @@ class Howdy extends Component {
               friendships.</p>
             </div>
             <div className="image">
-              <img src={poetry} height='100%' width='100%' />
+              <img src={process} height='100%' width='80%' />
             </div>
           </div>
         </div>
         <div className="section">
           <div className="section-content">
             <div className="image">
-              <img src={past} height='100%' width='100%' />
+              <img src={insights} height='100%' width='80%' />
             </div>
             <div className="text">
               <h3>Insights</h3>
-              <p>What originally started as an idea to help people make new friends
+              <p className="body-text">What originally started as an idea to help people make new friends
               rapidly changed into finding a solution that would allow users to
               maintain and strengthen their existing relationships. Even though
               users initially expressed interest and desire about making new friends,
@@ -85,6 +86,24 @@ class Howdy extends Component {
               Unknowingly at first, the majority of the users that were interviewed
               and surveyed were in long-term committed relationships--either married,
               engaged, or seriously dating. </p>
+            </div>
+          </div>
+        </div>
+        <div className="section">
+          <div className="section-content">
+            <div className="text">
+              <h3>Skills</h3>
+              <ul className="body-text">
+                <li>User Interviews</li>
+                <li>Affinity Maps</li>
+                <li>Persona Identification and Creation</li>
+                <li>User Flows</li>
+                <li>Key Feature Identification</li>
+                <li>Sketching</li>
+                <li>Wireframing and iteration</li>
+                <li>Usability testing</li>
+                <li>UI and visual design</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -6,14 +6,13 @@
   .link {
     font-size: 21px;
     color: lightgrey;
-    padding: 0 5px;
+    padding: 0 20px;
     text-decoration: none;
     &:hover {
-      color: darkgreen;
+      color: black;
     }
   }
   .currLink {
-    color: darkgreen;
-    font-size: 25px;
+    color: black;
   }
 }

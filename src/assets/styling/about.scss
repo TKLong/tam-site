@@ -14,56 +14,28 @@ $contactBackgroundColor: lightgrey;
 .self-description {
   flex: 2;
 }
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .self-description .description-content {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  padding: 20px;
+  display: flex;
+  padding: 20px 110px;
   img {
-    // flex: 1;
     max-height: 500px;
     max-width: 500px;
-    // width: 100%;
-    float: left;
-    margin: 0 20px 0 0;
+    margin: 0 50px 0 0;
   }
 }
-// .placeholder-image {
-//   height: 500px;
-//   width: 100%;
-//   justify-content: center;
-//   align-items: center;
-//   display: flex;
-//   border: thin solid black;
-//   padding: 20px;
-// }
 .text {
-  // padding: 20px;
   h3 {
     font-size: 30px;
   }
   p {
     font-size: 20px;
   }
-  // flex: 1;
-  // float: right;
 }
-// .interests {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: space-evenly;
-//   flex: 1;
-// }
-// .interest-wrapper {
-//   background-color: lightgrey;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//
-//   // width: 80%;
-// }
 .interests h3 {
   font-size: 20px;
   border-bottom: thin solid black;
@@ -87,34 +59,55 @@ $contactBackgroundColor: lightgrey;
   flex: 1;
   background-color: $contactBackgroundColor;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 300px;
 }
 .contact-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.contact-content h3 {
-  font-size: 23px;
-}
-.contact-content h1 {
-  font-size: 50px;
-  margin-top: 0;
-}
-@media screen and (max-width: 1000px) {
-  .about-grid {
-    grid-area: page;
-    flex-direction: column;
-  }
-  .interests {
+  width: 80%;
+  border: 1px solid black;
+  background-color: white;
+  .resume {
+    flex: 1;
+    display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: center;
+    cursor: pointer;
   }
-  .interest-item {
-    border: 1px solid black;
+  .contact-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: thin solid black;
+    cursor: pointer;
+    &.h3 {
+      font-size: 23px;
+    }
+    &.h1 {
+      font-size: 50px;
+      margin-top: 0;
+    }
   }
 }
+// .contact-content
+// .contact-content
+// @media screen and (max-width: 1000px) {
+//   .about-grid {
+//     grid-area: page;
+//     flex-direction: column;
+//   }
+//   .interests {
+//     flex-direction: row;
+//     width: 100%;
+//   }
+//   .interest-item {
+//     border: 1px solid black;
+//   }
+// }

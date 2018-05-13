@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito');
+
 @import './about.scss';
 @import './footer.scss';
 @import './home.scss';
@@ -7,3 +9,13 @@
 @import './project-nav.scss';
 @import './ui.scss';
 @import './ux.scss';
+
+body {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.body-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}

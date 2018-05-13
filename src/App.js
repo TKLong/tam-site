@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
-import Work from './pages/Work.js';
+import Home from './pages/Home.js';
 import Howdy from './pages/Howdy.js';
 import Mhouse from './pages/Mhouse.js';
 import Ui from './pages/Ui.js';
@@ -19,8 +19,7 @@ class App extends Component {
           <Nav />
           <div className='changing-content'>
             <ScrollToTop>
-            <Redirect path='/' to='/work' />
-            <Route path='/work' component={Work}/>
+            <Route exact path='/' component={Home}/>
             <Route path='/howdy' component={Howdy}/>
             <Route path='/mhouse' component={Mhouse}/>
             <Route path='/ui' component={Ui}/>

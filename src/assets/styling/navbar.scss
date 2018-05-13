@@ -12,8 +12,12 @@
   align-items: center;
   grid-area: name;
   display: flex;
+  flex-direction: row;
   a {
     color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     &:hover {
       text-decoration: none;
     }

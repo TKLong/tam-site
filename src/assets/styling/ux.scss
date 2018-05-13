@@ -5,7 +5,7 @@
 }
 .title-wrapper {
   text-align: center;
-  background-color: lightgrey;
+  background-color: rgba(237, 212, 162, .5);
 }
 .title-text {
   padding: 20px 0;
@@ -39,8 +39,11 @@
   align-items: center;
   justify-content: center;
   .howdy-study {
-    background-color: rgb(242, 212, 155);
-    border-color: rgb(242, 212, 155);
+    padding: 15px 25px;
+    color: black;
+    font-size: 20px;
+    background-color: #EfD59f;
+    border-color: #EfD59f;
   }
 }
 .options {
@@ -48,4 +51,7 @@
   justify-content: center;
   align-items: center;
   height: 100px;
+  .link {
+    padding: 0 20px;
+  }
 }
