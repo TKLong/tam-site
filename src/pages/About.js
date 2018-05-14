@@ -4,6 +4,23 @@ import placeholder from '../assets/images/placeholder.jpeg';
 import about from '../assets/images/about.jpg';
 
 class About extends Component {
+  componentDidMount() {
+    this.styleNav();
+  }
+
+  componentWillUnmount() {
+    this.unstyleNav();
+  }
+
+  styleNav() {
+    let el = document.getElementById('aboutLink');
+    el.style.borderBottom = 'thin solid black';
+  }
+
+  unstyleNav() {
+    let el = document.getElementById('aboutLink');
+    el.style.borderBottom = 'none';
+  }
   render() {
     return (
       <div className="about-grid">

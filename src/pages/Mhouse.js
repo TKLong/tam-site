@@ -64,7 +64,7 @@ class Mhouse extends Component {
         </div>
         <div className="section">
           <div className="section-content">
-            <div className="text">
+            <div className="skills">
               <h3>Skills</h3>
               <ul className="body-text">
                 <li>Competitive Analysis</li>

@@ -6,6 +6,12 @@
   grid-template-columns: 50px auto auto 50px;
   grid-template-areas: ". name links .";
   height: 125px;
+  a {
+    &:hover {
+      text-decoration: none;
+      color: orange;
+    }
+  }
 }
 .navbar-title {
   flex: 1;

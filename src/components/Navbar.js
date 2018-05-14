@@ -9,11 +9,11 @@ class Nav extends Component {
       <div className='navbar-parent'>
         <div className='navbar-title'>
           <Link to='/'>
-            <img src={logo} /><h1>Tamara Long</h1>
+            <img src={logo} /><h1 id="name">Tamara Long</h1>
           </Link>
         </div>
         <div className='navbar-links'>
-          <Link to='/about'>About Me</Link>
+          <Link to='/about' id="aboutLink">About Me</Link>
         </div>
       </div>
     );

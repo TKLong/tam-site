@@ -19,6 +19,15 @@
   align-items: center;
   flex: 1;
   margin-bottom: 60px;
+  h1 {
+    font-size: 80px;
+    border-bottom: thin solid grey;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 40px;
+    margin-top: 0;
+  }
 }
 .bar {
   width: 100%;
@@ -31,15 +40,6 @@
   align-items: center;
   color: white;
 }
-.hook h1 {
-  font-size: 126px;
-  border-bottom: thin solid grey;
-  margin-bottom: 0;
-}
-.hook h3 {
-  font-size: 40px;
-  margin-top: 0;
-}
 .portfolio {
   display: flex;
   background-color: lightgrey;
@@ -51,14 +51,21 @@
   align-items: center;
   max-width: 500px;
   max-height: 500px;
+  a {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .portfolio-img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    // max-width: 500px;
-    // max-height: 500px;
-    a, img {
+    img {
       flex: 1;
       height: 100%;
       width: 100%;
@@ -80,6 +87,15 @@
   //   flex-direction: column;
   // }
 }
+.item-1 {
+  background-color: rgb(242, 212, 155);
+}
+.item-2 {
+  background-color: rgb(158, 141, 147);
+}
+.item-3 {
+  background-color: rgb(141, 158, 142);
+}
 @media screen and (max-width: 1000px) {
   .portfolio {
     flex-direction: column;
@@ -87,6 +103,13 @@
     align-items: center;
   }
   .portfolio-item {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    * {
+      max-width: 500px;
+      max-height: 500px;
+    }
     &:first-child {
       border: {
         bottom: 1px solid black;

@@ -11,15 +11,29 @@ class Home extends Component {
     super(props);
     this.state = {};
   }
-  componentWillUpdate() {
+
+  componentDidMount() {
+    this.styleNav();
+  }
+
+  componentWillUnmount() {
+    this.unstyleNav();
+  }
+
+  styleNav() {
+    let el = document.getElementById('name');
+    el.style.borderBottom = 'thin solid black';
+  }
+
+  unstyleNav() {
+    let el = document.getElementById('name');
+    el.style.borderBottom = 'none';
   }
 
   handleClick(target) {
     this.setState({
       displaying: target,
     })
-    console.log('triggered')
-    console.log(this.state.displaying)
   }
 
   render() {
@@ -27,52 +41,51 @@ class Home extends Component {
       <div className="home-grid">
         <div className="title">
           <div className="hook">
-            <h1>I am a storyteller</h1>
-            <h3>designing UX/UI for the web and mobile apps</h3>
+            <h1>Designing for delight</h1>
           </div>
           <div className="bar">
           WORK
           </div>
         </div>
         <div className="portfolio">
-          <div className="portfolio-item">
-            <div className="portfolio-title">
-              <Link to='/howdy'><h2>Howdy</h2></Link>
-            </div>
-            <div className="portfolio-img">
-              <Link to='/howdy'>
-                <img src={howdyHome} />
-              </Link>
-            </div>
-            <div className="portfolio-description body-text">
-              <p>UX/UI design for a relationship management app</p>
-            </div>
+          <div className="portfolio-item item-1">
+            <Link to='/howdy'>
+              <div className="portfolio-title">
+                <h2>Howdy</h2>
+              </div>
+              <div className="portfolio-img">
+                  <img src={howdyHome} />
+              </div>
+              <div className="portfolio-description body-text">
+                <p>UX/UI design for a relationship management app</p>
+              </div>
+            </Link>
           </div>
-          <div className="portfolio-item">
-            <div className="portfolio-title">
-              <Link to='/mhouse'><h2>Mistake House</h2></Link>
-            </div>
-            <div className="portfolio-img">
-              <Link to='/mhouse'>
+          <div className="portfolio-item item-2">
+            <Link to='/mhouse'>
+              <div className="portfolio-title">
+                <h2>Mistake House</h2>
+              </div>
+              <div className="portfolio-img">
                 <img src={mistakeHome} />
-              </Link>
-            </div>
-            <div className="portfolio-description body-text">
-              <p>UX/UI website redesign for a literary magazine</p>
-            </div>
+              </div>
+              <div className="portfolio-description body-text">
+                <p>UX/UI website redesign for a literary magazine</p>
+              </div>
+            </Link>
           </div>
-          <div className="portfolio-item">
-            <div className="portfolio-title">
-              <Link to='/ui'><h2>UI</h2></Link>
-            </div>
-            <div className="portfolio-img">
-              <Link to='/ui'>
+          <div className="portfolio-item item-3">
+            <Link to='/ui'>
+              <div className="portfolio-title">
+                <h2>UI</h2>
+              </div>
+              <div className="portfolio-img">
                 <img src={dailyUi} />
-              </Link>
-            </div>
-            <div className="portfolio-description body-text">
-              <p>A daily UI challenge focusing on quick iterations</p>
-            </div>
+              </div>
+              <div className="portfolio-description body-text">
+                <p>A daily UI challenge focusing on quick iterations</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
