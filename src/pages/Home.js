@@ -22,12 +22,12 @@ class Home extends Component {
 
   styleNav() {
     let el = document.getElementById('name');
-    el.style.borderBottom = 'thin solid black';
+    el.style.color = 'orange';
   }
 
   unstyleNav() {
     let el = document.getElementById('name');
-    el.style.borderBottom = 'none';
+    el.style.color = 'black';
   }
 
   handleClick(target) {
@@ -41,7 +41,7 @@ class Home extends Component {
       <div className="home-grid">
         <div className="title">
           <div className="hook">
-            <h1>Designing for delight</h1>
+            <h1>Designing for <span className="adjective">delight.</span></h1>
           </div>
           <div className="bar">
           WORK

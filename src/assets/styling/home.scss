@@ -14,19 +14,17 @@
 .hook {
   // background-color: lightblue;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex: 1;
   margin-bottom: 60px;
   h1 {
     font-size: 80px;
-    border-bottom: thin solid grey;
     margin-bottom: 0;
   }
-  h3 {
-    font-size: 40px;
-    margin-top: 0;
+  .adjective {
+    color: orange;
   }
 }
 .bar {
@@ -59,6 +57,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
   }
   .portfolio-img {
     flex: 1;
@@ -95,36 +97,4 @@
 }
 .item-3 {
   background-color: rgb(141, 158, 142);
-}
-@media screen and (max-width: 1000px) {
-  .portfolio {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio-item {
-    flex: 1;
-    width: 100%;
-    max-width: 100%;
-    * {
-      max-width: 500px;
-      max-height: 500px;
-    }
-    &:first-child {
-      border: {
-        bottom: 1px solid black;
-        left: none;
-        right: none;
-        top: none;
-      }
-    }
-    &:last-child {
-      border: {
-        bottom: none;
-        left: none;
-        right: none;
-        top: 1px solid black;
-      }
-    }
-  }
 }

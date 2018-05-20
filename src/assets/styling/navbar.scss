@@ -29,6 +29,13 @@
     }
   }
 }
+.responsive-icon {
+  display: none;
+}
+.dropdown {
+  grid-area: links;
+  display: none;
+}
 .navbar-links {
   display: flex;
   flex: 1;

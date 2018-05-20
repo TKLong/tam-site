@@ -18,14 +18,15 @@ $contactBackgroundColor: lightgrey;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .self-description .description-content {
   display: flex;
   padding: 20px 110px;
+  flex-direction: column;
   img {
     max-height: 500px;
     max-width: 500px;
-    margin: 0 50px 0 0;
   }
 }
 .text {

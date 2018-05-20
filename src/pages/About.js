@@ -14,12 +14,12 @@ class About extends Component {
 
   styleNav() {
     let el = document.getElementById('aboutLink');
-    el.style.borderBottom = 'thin solid black';
+    el.style.color = 'orange';
   }
 
   unstyleNav() {
     let el = document.getElementById('aboutLink');
-    el.style.borderBottom = 'none';
+    el.style.color = 'black';
   }
   render() {
     return (
